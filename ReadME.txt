@@ -19,6 +19,8 @@ and add the type="text/babel" attribute to the index.js import as below
 Execute the code and see the output.
 
 ---------------------------------------------------------------------------
+Level 1 - Babel CLI  - It can help us transpile JavaScript that uses new syntax into static files that use browser supported syntax.
+
 Oct 11th - Take the master branch code for this exercise.
 
 Removed  browser.js babel script from the index.html
@@ -59,3 +61,6 @@ update package.json file as below
 change "test" inside "scripts" to "start" command and value to "httpster -d ./dist -p 3000"
 Go back to terminal and execute the below command
 $ npm start
+
+------------------------------------------------------------------------------------------
+                       LEVEL 3 - WEBPACK
