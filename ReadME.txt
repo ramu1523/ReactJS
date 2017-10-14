@@ -20,7 +20,7 @@ Execute the code and see the output.
 
 ---------------------------------------------------------------------------
 Level 1 - Babel CLI  - It can help us transpile JavaScript that uses new syntax into static files that use browser supported syntax.
-
+It offers performance benefits in the browser because all traspilling happens before run time.
 Oct 11th - Take the master branch code for this exercise.
 
 Removed  browser.js babel script from the index.html
