@@ -64,3 +64,27 @@ $ npm start
 
 ------------------------------------------------------------------------------------------
                        LEVEL 3 - WEBPACK
+It is alternative to the babel-cli. Webpack is a module bundler that helps us create static files and
+helps us automate processes that need to happen before our files can go into production.
+
+Think about a typical HTML file. We might load several different scripts, making several HTTP requests.
+Webpack will run several commands at a time to create a bundle file. This bundle packages scripts, dependencies,
+and even CSS into one file and one file means one request.
+
+create webpack config file as "webpack.config.js" inside "start" folder.
+The Webpack config is going to describe everything that we want Webpack to do to our files to ready them for production.
+
+Once you descibed everything in the webpack.config.js file, install webpack using the below commands.
+
+$ npm install webpack@1.13.3 --save-dev
+$ npm install babel-loader@6.2.5 --save-dev
+$ npm install webpack-dev-server@1.16.2 --save-dev
+$ sudo npm install -g webpack@1.13.3
+$ ./node_modules/.bin/webpack
+
+update the bundle.js file path in index.html file.
+update the package.json file start command value as below.
+"./node_modules/.bin/webpack-dev-server"
+
+You can start the server using the below command
+$npm start      
