@@ -109,3 +109,19 @@ npm install json-loader@0.5.4 --save-dev
 
 start the server using the below command
 $ npm start
+
+-------------------------------------------------------------------------------------------
+            LEVEL 5 - Add CSS to webpack build
+Remove the inline style from lib.js file.
+Inside src folder create a new folder stylesheets.
+Inside stylesheets folder create your css files.
+update webpack.config.js file.
+Install the below dependencies
+
+$ npm install autoprefixer-loader@3.2.0 --save-dev
+$ npm install css-loader@0.25.0 --save-dev
+$ sudo npm install node-sass@3.10.1 --save-dev
+$ npm install sass-loader@4.0.2 --save-dev
+If above command not works then use the below command
+npm install sass-loader node-sass webpack --save-dev
+$ npm install style-loader@0.13.1 --save-dev
