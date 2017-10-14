@@ -125,3 +125,33 @@ $ npm install sass-loader@4.0.2 --save-dev
 If above command not works then use the below command
 npm install sass-loader node-sass webpack --save-dev
 $ npm install style-loader@0.13.1 --save-dev
+
+-------------------------------------------------------------------------------
+   LEVEL 6 - Migration to Webpack 3
+
+  In this lesson we will see the differences between webpack 1 and webpack 3
+  Create a new folder upgrade-build in "Ch02/02-8/start folder"
+  Though terminal, navigated to the upgrade-build folder.
+  Execute the below commands
+  $ npm init -y
+  Here, "-y" option will create package.json file with default values.
+
+  $ npm install webpack@3.1.0 --save-dev
+  $ npm install babel-core@6.25.0 --save-dev
+  $ npm install babel-loader@7.1.1 --save-dev
+  $ npm install babel-preset-env@1.6.0 --save-dev
+  $ npm install babel-preset-react@6.24.1 --save-dev
+
+  Create webpack.config.js file inside upgrade-build folder
+  crate src folder inside upgrade-build folder.
+  inside src folder create index.js file.
+  create .babelrc file inside upgrade-build folder
+  once you update the above created files run the code using below command
+  $ webpack
+   if you got any error like webpack not found then use the below command.
+  $ .node_modules/.bin/webpack
+  (or) add the build script in package.json file.
+  "build": "./node_modules/.bin/webpack"
+
+  Execute the project using below command.
+  $ npm run build
