@@ -17,14 +17,11 @@ render(
 )*/
 
 //The below code will not work because  browser will not recognize the tags until you use some compiler/traspiler tool like babel to convert the below code to java script.
+import React from 'react'
+import {render} from 'react-dom'
+import {hello, goodbye} from './lib'
 
- const {render} = ReactDOM
 render(
-  <h1 id='title'
-  className='header'
-  style={{backgroundColor:'orange',
-  color:'white',
-  fontFamily:'verdana'}}>
-  Welcome To React World!!</h1>,
+  <div> {hello}{goodbye}</div>,
   document.getElementById('react-container')
 )

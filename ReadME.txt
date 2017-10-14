@@ -87,4 +87,25 @@ update the package.json file start command value as below.
 "./node_modules/.bin/webpack-dev-server"
 
 You can start the server using the below command
-$npm start      
+$npm start
+
+
+---------------------------------------------------------------------------------------------
+                  LEVEL 4 - WEBPACK - Load React dependencies as well as some JSON Data using webpack
+
+Install React and ReactDOM dependencies
+$ npm install react@15.3.2 --save
+$ npm install react-dom@15.3.2 --save
+
+remove react and react-dom dependencies from index.html file
+inside src folder create lib.js,titles.json file.
+create some json object in titles.json file.
+implement lib.js file with the logic.
+update the index.js file.
+update webpack.config.js file.
+
+install json loader as below
+npm install json-loader@0.5.4 --save-dev
+
+start the server using the below command
+$ npm start
