@@ -1,7 +1,7 @@
 import React from 'react'
 import { render } from 'react-dom'
 import {EmployeeList } from './components/EmployeeList'
-import { App } from './components/App'
+import { App } from './components/App-ES6'
 //import {Employee} from './components/Employee-ES6'
 //import { Employee } from './components/EmployeeCreateClass'
 

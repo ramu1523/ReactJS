@@ -1,4 +1,5 @@
 import {createClass} from 'react'
+import {EmployeeList} from './EmployeeList'
 
 export const App = createClass(
   {
@@ -37,7 +38,8 @@ export const App = createClass(
     {
       return (
         <div class="app">
-          {this.state.employees[0].employeeId}
+        
+        <EmployeeList employees={this.state.employees}/>
         </div>
       )
     }
