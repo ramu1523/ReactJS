@@ -5,16 +5,16 @@ const MainMenu = () => {
     return (
         <nav>
             <Link to="/"><FaHome/></Link>
-            <Link to="about" 
+            <Link to="about"
             	  activeStyle={{
-            	  backgroundColor: "white", 
+            	  backgroundColor: "white",
             	  color: "slategray"
             	}}>
             	About
             </Link>
-            <Link to="members" 
+            <Link to="members"
             	  activeStyle={{
-            	  	backgroundColor: "white", 
+            	  	backgroundColor: "white",
             	  	color: "slategray"
             	  }}>
             	  Members
