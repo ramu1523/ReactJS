@@ -1,10 +1,15 @@
 import React from 'react'
 import { render } from 'react-dom'
 import {EmployeeList } from './components/EmployeeList'
+import { App } from './components/App'
 //import {Employee} from './components/Employee-ES6'
 //import { Employee } from './components/EmployeeCreateClass'
 
 window.React = React
+
+//Test State
+
+render(<App/>,document.getElementById('react-container'))
 
 //Test Default Props and prototypes
 
@@ -18,7 +23,7 @@ window.React = React
 	document.getElementById('react-container')
 )*/
 
-render(
+/**render(
 	<EmployeeList employees = {
 		[
 			{
@@ -49,4 +54,4 @@ render(
 	}
 	/>,
 	document.getElementById('react-container')
-)
+)*/
