@@ -168,3 +168,11 @@ $ npm install style-loader@0.13.1 --save-dev
   -----------------------------------------------------------------
   Level 9 - ES6 Class Syntax - Cho3-03-02
   ----------------------------------------------------------------
+  Level 10 - Creating Stateless Function Components - Cho3-03-02
+
+  Stateless functional components are functions that take in property information, and return JSX elements.
+  Stateless components can't access this, so properties are passed directly into the function.
+  Also, local methods need to be removed, and put into their own functions.
+  ----------------------------------------------------------------
+
+  
