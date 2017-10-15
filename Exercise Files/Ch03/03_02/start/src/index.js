@@ -1,8 +1,23 @@
 import React from 'react'
 import { render } from 'react-dom'
 import {EmployeeList } from './components/EmployeeList'
+//import {Employee} from './components/Employee-ES6'
+//import { Employee } from './components/EmployeeCreateClass'
 
 window.React = React
+
+//Test Default Props and prototypes
+
+/**render(
+	<Employee employeeId="10001" employeeName="ramu chinni"/>,
+	document.getElementById('react-container')
+)*/
+
+/**render(
+	<Employee employeeId="100001" employeeName="Ramu Chinni"/>,
+	document.getElementById('react-container')
+)*/
+
 render(
 	<EmployeeList employees = {
 		[

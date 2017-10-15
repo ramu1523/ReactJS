@@ -189,3 +189,5 @@ $ npm install style-loader@0.13.1 --save-dev
   Level 12 - Components - Table
 
   -----------------------------------------------------------
+  Level 13 - Components - Prop Types, Validation and custom validation
+  -------------------------------------------------------------

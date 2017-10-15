@@ -1,6 +1,7 @@
 import FaFemale from 'react-icons/lib/fa/female'
 import FaMale from 'react-icons/lib/fa/male'
 import {EmployeeRow} from './EmployeeRow'
+import {PropTypes} from 'react'
 
 export const EmployeeList = ({employees})=>
 (
@@ -26,3 +27,26 @@ export const EmployeeList = ({employees})=>
      </tbody>
   </table>
 )
+
+/**EmployeeList.propTypes =
+{
+  employees : PropTypes.array
+}*/
+//Custom validation
+EmployeeList.propTypes =
+{
+  employees : function(props)
+  {
+    if(!Array.isArray(props.employees))
+    {
+      return new Error("EmployeeList should be an Array")
+    }else if(!props.employees.length){
+
+        return new Error("EmployeeList should should have atleast one record")
+
+    }
+    else {
+      return null
+    }
+  }
+}
