@@ -8,13 +8,13 @@ export const Employee = React.createClass(
       return(
         <div className="employee">
          <div className="employeeNumber">
-          <span> Employee Number: 1234567</span>
+          <span> Employee Number: {this.props.employeeId}</span>
          </div>
          <div className="employeeName">
-           <span>Employee Name: Ramu Chinni</span>
+           <span>Employee Name: {this.props.employeeName} </span>
          </div>
          <div className="employeeAddress">
-         <span> Employee Address: Eagan, MN, 55123</span>
+         <span> Employee Address: {this.props.employeeAddress}</span>
          </div>
         </div>
       )

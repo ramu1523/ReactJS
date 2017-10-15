@@ -157,6 +157,12 @@ $ npm install style-loader@0.13.1 --save-dev
   $ npm run build
 
 -------------------------------------------------------------------------
-  Level 7 - Project with Components
+  Level 7 - Project with Components - Cho3-03-02
   Install all dev dependencies specified in package.json file and run the code using the below command
   $ npm start
+
+  ----------------------------------------------------------------------
+
+  Level 8 - Adding Component Properties - Cho3-03-02
+
+  -----------------------------------------------------------------------
