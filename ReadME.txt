@@ -198,3 +198,13 @@ $ npm install style-loader@0.13.1 --save-dev
   ---------------------------------------------------------------
   Level 15 - Passing State as props - Cho3-03-02
   ------------------------------------------------------------
+  Level 16 -  React Router - Cho3-03-02
+  Using React Router, we will be able to navigate between different components on different pages.
+
+  Install React Router:
+  npm install react-router@3.0.0 --save
+
+  Try accessing the below urls
+  http://localhost:3000/#/add-employee
+  http://localhost:3000/#/list-employees
+  ---------------------------------------------------------

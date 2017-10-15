@@ -1,15 +1,29 @@
 import React from 'react'
 import { render } from 'react-dom'
-import {EmployeeList } from './components/EmployeeList'
-import { App } from './components/App-ES6'
+//import {EmployeeList } from './components/EmployeeList'
+import { App } from './components/App'
+import {Router, Route,hashHistory} from 'react-router'
+import {Whoops404} from './components/Whoops404'
 //import {Employee} from './components/Employee-ES6'
 //import { Employee } from './components/EmployeeCreateClass'
 
 window.React = React
 
+//Test Router
+
+render(
+	<Router history={hashHistory}>
+       <Route path="/" component={App}></Route>
+			 <Route path="/list-employees" component={App}></Route>
+			 <Route path="/add-employee" component={App}></Route>
+			 <Route path="*" component={Whoops404}></Route>
+	</Router>,
+	document.getElementById('react-container')
+)
+
 //Test State
 
-render(<App/>,document.getElementById('react-container'))
+//render(<App/>,document.getElementById('react-container'))
 
 //Test Default Props and prototypes
 

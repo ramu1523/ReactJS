@@ -1,6 +1,7 @@
 import {createClass} from 'react'
 import {EmployeeList} from './EmployeeList'
-
+import {AddEmployeeForm} from './AddEmployeeForm'
+import {Whoops404} from './Whoops404'
 export const App = createClass(
   {
     getInitialState()
@@ -38,8 +39,16 @@ export const App = createClass(
     {
       return (
         <div class="app">
-        
-        <EmployeeList employees={this.state.employees}/>
+          {(this.props.location.pathname == '/')?
+          <EmployeeList employees={this.state.employees}/> :
+          (this.props.location.pathname == '/list-employees')?
+            <EmployeeList employees={this.state.employees}/> :
+            (this.props.location.pathname == '/add-employee')?
+            <AddEmployeeForm/> :
+            <Whoops404/>
+        }
+
+
         </div>
       )
     }
