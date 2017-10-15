@@ -186,15 +186,15 @@ $ npm install style-loader@0.13.1 --save-dev
 
   ---------------------------------------------------------------
 
-  Level 12 - Components - Table
+  Level 12 - Components - Table - Cho3-03-02
 
   -----------------------------------------------------------
-  Level 13 - Components - Prop Types, Validation and custom validation
+  Level 13 - Components - Prop Types, Validation and custom validation - Cho3-03-02
   -------------------------------------------------------------
-  Level 14 - State
+  Level 14 - State - Cho3-03-02
 
   State represents the possible conditions of your application.
   Maybe you have a state for editing, and a state for saved, or a state for logged in and logged out.
   ---------------------------------------------------------------
-  Level 15 - Passing State as props
+  Level 15 - Passing State as props - Cho3-03-02
   ------------------------------------------------------------
