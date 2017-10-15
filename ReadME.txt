@@ -185,3 +185,7 @@ $ npm install style-loader@0.13.1 --save-dev
   $ npm install --save  react-icons
 
   ---------------------------------------------------------------
+
+  Level 12 - Components - Table
+
+  -----------------------------------------------------------
