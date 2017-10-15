@@ -1,12 +1,12 @@
 import React from 'react'
 import '../stylesheets/ui.scss'
 
-export const Employee = React.createClass(
+export class Employee extends React.Component
   {
     employeeMonthlyWage(yearlyWage)
     {
       return '$' + (yearlyWage/12)
-    },
+    }
     render()
     {
       return(
@@ -27,4 +27,3 @@ export const Employee = React.createClass(
       )
     }
   }
-)
