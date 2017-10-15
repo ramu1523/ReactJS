@@ -175,4 +175,13 @@ $ npm install style-loader@0.13.1 --save-dev
   Also, local methods need to be removed, and put into their own functions.
   ----------------------------------------------------------------
 
-  
+  Level 11 - Adding react icons - Cho3-03-02
+
+  You can find all different icons provided by reactjs in the below link. You can use these icons in your application.
+  https://gorangajic.github.io/react-icons/fa.html
+
+  install react icons as below
+  $ sudo npm install --save prop-types
+  $ npm install --save  react-icons
+
+  ---------------------------------------------------------------

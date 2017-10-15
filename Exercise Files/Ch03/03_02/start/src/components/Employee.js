@@ -1,5 +1,5 @@
 import '../stylesheets/ui.scss'
-
+import FaBitcoin from 'react-icons/lib/fa/bitcoin'
 const employeeMonthlyWage = (yearlyWage) =>
 {
   return ('$' + (yearlyWage/12))
@@ -18,6 +18,9 @@ export const Employee = (props) =>
          </div>
          <div className="employeeMonthlyWage">
          <span>Employee Monthly Wage: {employeeMonthlyWage(props.employeeYearlyWage)} </span>
+         </div>
+         <div>
+         <FaBitcoin/>
          </div>
         </div>
       )
