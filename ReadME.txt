@@ -163,6 +163,4 @@ $ npm install style-loader@0.13.1 --save-dev
 
   ----------------------------------------------------------------------
 
-  Level 8 - Adding Component Properties - Cho3-03-02
-
-  -----------------------------------------------------------------------
+  Level 8 - Adding Component Properties and Methods - Cho3-03-02

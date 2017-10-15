@@ -4,6 +4,6 @@ import {Employee } from './components/Employee.js'
 
 window.React = React
 render(
-	<Employee employeeId={100001} employeeName="Ramu Chinni" employeeAddress="Eagan, MN, 551234"/>,
+	<Employee employeeId={100001} employeeName="Ramu Chinni" employeeAddress="Eagan, MN, 551234" employeeYearlyWage={70000}/>,
 	document.getElementById('react-container')
 )

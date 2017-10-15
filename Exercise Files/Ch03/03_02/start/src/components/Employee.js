@@ -3,6 +3,10 @@ import '../stylesheets/ui.scss'
 
 export const Employee = React.createClass(
   {
+    employeeMonthlyWage(yearlyWage)
+    {
+      return '$' + (yearlyWage/12)
+    },
     render()
     {
       return(
@@ -15,6 +19,9 @@ export const Employee = React.createClass(
          </div>
          <div className="employeeAddress">
          <span> Employee Address: {this.props.employeeAddress}</span>
+         </div>
+         <div className="employeeMonthlyWage">
+         <span>Employee Monthly Wage: {this.employeeMonthlyWage(this.props.employeeYearlyWage)} </span>
          </div>
         </div>
       )
