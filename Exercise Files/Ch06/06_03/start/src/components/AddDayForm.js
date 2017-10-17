@@ -1,7 +1,7 @@
 import { PropTypes, Component } from 'react'
 
 export class AddDayForm extends Component {
-	
+
 	constructor(props) {
 		super(props)
 		this.submit = this.submit.bind(this)
@@ -18,37 +18,37 @@ export class AddDayForm extends Component {
 
 	render() {
 
-		const { resort, date, powder, backcountry } = this.props 
+		const { resort, date, powder, backcountry } = this.props
 
 		return (
 			<form onSubmit={this.submit} className="add-day-form">
 
 				<label htmlFor="resort">Resort Name</label>
-				<input id="resort" 
-					   type="text" 
-					   required 
+				<input id="resort"
+					   type="text"
+					   required
 					   defaultValue={resort}
 					   ref="resort"/>
 
 				<label htmlFor="date">Date</label>
-				<input id="date" 
-					   type="date" 
-					   required 
+				<input id="date"
+					   type="date"
+					   required
 					   defaultValue={date}
 					   ref="date"/>
 
 				<div>
-					<input id="powder" 
-						   type="checkbox" 
-						   defaultChecked={powder}	
+					<input id="powder"
+						   type="checkbox"
+						   defaultChecked={powder}
 						   ref="powder"/>
 					<label htmlFor="powder">Powder Day</label>
 				</div>
 
-				<div>	
-					<input id="backcountry" 
+				<div>
+					<input id="backcountry"
 						   type="checkbox"
-						   defaultChecked={backcountry} 
+						   defaultChecked={backcountry}
 						   ref="backcountry"/>
 					<label htmlFor="backcountry">
 						Backcountry Day

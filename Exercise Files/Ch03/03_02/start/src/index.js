@@ -4,6 +4,7 @@ import { render } from 'react-dom'
 import { App } from './components/App'
 import {Router, Route,hashHistory} from 'react-router'
 import {Whoops404} from './components/Whoops404'
+import './stylesheets/ui.scss'
 //import {Employee} from './components/Employee-ES6'
 //import { Employee } from './components/EmployeeCreateClass'
 

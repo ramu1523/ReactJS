@@ -127,7 +127,7 @@ div.ski-day-count {
 
 }
 
-div.ski-day-list {
+div.employee-list {
 
   height: calc(100% - 13em);
   overflow-y: scroll;
@@ -178,7 +178,7 @@ div.show-errors {
   }
 }
 
-form.add-day {
+form.add-employee-form {
   font-family: Verdana, sans-serif;
   width: 70%;
   margin-left: 15%;
@@ -202,7 +202,8 @@ form.add-day {
   }
 
   input[type="text"],
-  input[type="date"] {
+  input[type="date"],
+  input[type="number"] {
     font-size: 1.5em;
     padding: .25em;
     border-radius: .2em;
@@ -273,11 +274,4 @@ form.add-day {
     padding: 5px;
   }
 
-}
-
-
-div.employee
-{
-  background-color: skyblue;
-  color:red;
 }
