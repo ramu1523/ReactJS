@@ -10,7 +10,7 @@ export const EmployeeRow = ({employeeId,employeeName,employeeYearlyWage,employee
       <td>{employeeId}</td>
       <td>{employeeName}</td>
      <td>{<FaDollar/>}{employeeYearlyWage/12}</td>
-      <td>{employeeJoinDate.getMonth()+1}/{employeeJoinDate.getDate()}/{employeeJoinDate.getFullYear()}</td>
+      <td>{employeeJoinDate}</td>
      <td>{employeeAddress}</td>
     <td>{(gender=='Male')? <FaMale/> : <FaFemale/>}</td>
   </tr>
@@ -19,6 +19,6 @@ export const EmployeeRow = ({employeeId,employeeName,employeeYearlyWage,employee
 EmployeeRow.propTypes={
   employeeId : PropTypes.number.isRequired,
   employeeName: PropTypes.string,
-  employeeJoinDate: PropTypes.instanceOf(Date).isRequired
+  employeeJoinDate: PropTypes.string.isRequired
 
 }

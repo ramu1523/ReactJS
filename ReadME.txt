@@ -225,3 +225,5 @@ $ npm install style-loader@0.13.1 --save-dev
   Level 21 - Forms and using references in state less components - Cho3-03-02
 
   --------------------------------------------------------------------------
+  Level 22- Two way function binding - Cho3-03-02
+  ---------------------------------------------------------------------------

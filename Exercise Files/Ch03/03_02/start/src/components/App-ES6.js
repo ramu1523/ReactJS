@@ -1,19 +1,20 @@
 import {Component} from 'react'
 import {EmployeeList} from './EmployeeList'
-
+import {Menu} from './Menu'
+import {AddEmployeeForm} from './AddEmployeeForm'
 export class App extends Component
   {
    constructor(props)
    {
      super(props)
-     this.state= {
+     this.state = {
        employees: [
          {
            employeeId: 10001,
            employeeName: "Ramu Chinni",
            employeeYearlyWage: 60000,
            employeeAddress: "Eagan,MN, 553445",
-           employeeJoinDate: new Date("1/10/2014"),
+           employeeJoinDate: "2012-02-10",
            gender: 'Male'
          },
          {
@@ -21,7 +22,7 @@ export class App extends Component
            employeeName: "Latha  B",
            employeeYearlyWage: 84000,
            employeeAddress: "Eagan,MN, 553445",
-           employeeJoinDate: new Date("3/28/2012"),
+           employeeJoinDate: "2012-05-09",
            gender: "Female"
          },
          {
@@ -29,19 +30,37 @@ export class App extends Component
            employeeName: "Shyam C",
            employeeYearlyWage: 72000,
            employeeAddress: "Eagan,MN, 553445",
-           employeeJoinDate: new Date("5/10/2012"),
+           employeeJoinDate: "2010-08-17",
            gender: "Male"
          }
        ]
      }
+     this.addEmployee = this.addEmployee.bind(this)
    }
+
+  addEmployee(newEmployee)
+  {
+     this.setState({
+       employees: [
+         ...this.state.employees, newEmployee
+        ]
+     })
+  }
 
     render()
     {
       return (
         <div className="app">
+        <Menu/>
+         {(this.props.location.pathname == '/')?
+         <EmployeeList employees={this.state.employees}/> :
+         (this.props.location.pathname == '/list-employees')?
+           <EmployeeList employees={this.state.employees}/> :
+           (this.props.location.pathname == '/add-employee')?
+           <AddEmployeeForm onNewEmployee={this.addEmployee}/> :
+           <Whoops404/>
+       }
 
-        <EmployeeList employees={this.state.employees}/>
 
         </div>
       )

@@ -1,19 +1,28 @@
-import {PropTypes, Component} from 'react'
+import {PropTypes} from 'react'
 
 // form and references using state less functions
 
-export const AddEmployeeForm = ({ employeeId, employeeName, employeeYearlyWage,employeeAddress,employeeJoinDate}) =>
+export const AddEmployeeForm = ({ employeeId, employeeName, employeeYearlyWage,employeeAddress,employeeJoinDate, onNewEmployee}) =>
 {
   let _employeeId, _employeeName, _employeeYearlyWage, _employeeAddress, _employeeJoinDate
   const submit = (e) =>
   {
     //prevent the default behaviour
     e.preventDefault()
-    console.log('employeeId',_employeeId.value)
-    console.log('employeeName',_employeeName.value)
-    console.log('employeeYearlyWage',_employeeYearlyWage.value)
-    console.log('employeeAddress',_employeeAddress.value)
-    consol.log('employeeJoinDate',_employeeJoinDate.value)
+    onNewEmployee({
+
+      employeeId: _employeeId.value,
+      employeeName: _employeeName.value,
+      employeeYearlyWage: _employeeYearlyWage.value,
+      employeeAddress:  _employeeAddress.value,
+      employeeJoinDate: _employeeJoinDate.value
+    })
+    //Once you submit the form reset the values to empty strings
+    _employeeId.value = ''
+    _employeeName.value = ''
+    _employeeYearlyWage.value = ''
+    _employeeAddress.value = ''
+    _employeeJoinDate.value = ''
     //consol.log('gender',this.refs.gender.value)
   }
 
